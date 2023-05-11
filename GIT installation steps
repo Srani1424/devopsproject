@@ -1,0 +1,13 @@
+GIT installation steps:
+	
+	yum install vim wget make tar unzip -y
+	yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel -y
+	yum install gcc perl-ExtUtils-MakeMakers -y
+	cd/opt
+	wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.39.1.tar.gz
+	tar- xvf git-2.39.1tar.gz
+	cd git-2.39.1tar.gz
+	make prefix=/usr/local/git all
+	make prefix=/usr/local/git install
+	export PATH=$PATH:/usr/local/git/bin
+	yum remove git -y
